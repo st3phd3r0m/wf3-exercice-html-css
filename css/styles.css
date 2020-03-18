@@ -1,5 +1,6 @@
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:100%;
 }
 
 nav{
@@ -58,11 +59,15 @@ article{
 }
 
 article h1{
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 section{
-    margin:1%;
+    margin-left:1%;
+}
+
+section h1{
+    font-size:2rem;
 }
 
 section img{
