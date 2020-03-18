@@ -30,18 +30,19 @@ nav ul li a {
 
 nav ul li:first-child a {
     color:black;
+    font-weight: bold;
 }
 
 main{
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 aside{
     display: inline-block;
     width: 25%;
     vertical-align: top;
-    border-right: 2px solid black;
+    border-right: 1px solid black;
 }
 
 section{
@@ -53,7 +54,7 @@ section{
 article{
     padding:2%;
     margin:2%;
-    border:2px solid black;
+    border:1px solid black;
 }
 
 article h1{
@@ -69,11 +70,6 @@ section img{
     border-radius: 100%;
 }
 
-footer{
-    border-top: 2px solid grey;
-}
-
-.centrer{
-    width:100%;
+footer p{
     text-align:center;
 }
