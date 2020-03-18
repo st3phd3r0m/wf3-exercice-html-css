@@ -15,13 +15,13 @@ nav img{
 
 nav ul{
     list-style-type:none;
-    width:40%;
-    display:flex;
-    justify-content: space-around;	
+    width:30%;
 }
 
 nav ul li{
-    margin:auto; 
+    display: inline-block;
+    margin-left:5%;
+    margin-top: 9%;
 }
 
 nav ul li a {
@@ -37,33 +37,32 @@ nav ul li:first-child a {
 main{
     border-top: 1px solid black;
     border-bottom: 1px solid black;
+    display:flex;
 }
 
 aside{
-    display: inline-block;
     width: 25%;
-    vertical-align: top;
     border-right: 1px solid black;
 }
 
 section{
-    display: inline-block;
     width:70%;
     height: 100%;
 }
 
-article{
+aside article{
     padding:2%;
     margin:2%;
     border:1px solid black;
 }
 
-article h1{
+aside article h1{
     font-size: 1.2rem;
 }
 
 section{
     margin-left:1%;
+    
 }
 
 section h1{
@@ -77,4 +76,16 @@ section img{
 
 footer p{
     text-align:center;
+}
+
+section article{
+    width:18%;
+    border:1px solid black;
+    display: inline-table;
+    margin-bottom:0.5%;
+    padding-left:1%;
+}
+
+section article h1{
+    font-size: 1.2rem;
 }
