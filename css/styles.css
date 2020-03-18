@@ -15,15 +15,13 @@ nav img{
 
 ul{
     list-style-type:none;
-    border:1px solid black;
+    width:35%;
     display:flex;
     justify-content: space-around;	
 }
 
 li{
-    /* margin:auto;  */
-    padding:2%;
-    border:1px solid black;
+    margin:auto; 
 }
 
 a {
