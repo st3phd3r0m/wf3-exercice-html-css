@@ -2,47 +2,36 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header{
+nav{
     border-bottom: 2px solid grey;
-    display: flex;
     background-color: rgb(245, 243, 243);
-}
-header div{
-    flex:4;
+    display: flex;
+    justify-content: space-between;
 }
 
-header img{
+nav img{
     width:10%;
 }
 
-nav{
-    flex:1;
-    text-decoration: none;
-    border:1px solid black;
-}
-
-nav ul{
-    display:flex;
+ul{
     list-style-type:none;
-    text-decoration:none;
     border:1px solid black;
- 
+    display:flex;
+    justify-content: space-around;	
 }
 
 li{
+    /* margin:auto;  */
+    padding:2%;
     border:1px solid black;
 }
 
-nav ul a {
+a {
     text-decoration:none;
     color:grey;
     /* justify-content: space-around;	
     align-items: center; */
 }
-
-/* nav ul a:active{
-    color:black;
-} */
 
 aside{
     display: inline-block;
@@ -58,16 +47,13 @@ section{
 article{
     padding:2%;
     margin:2%;
-}
-
-#part1{
-    border-right:2px solid black;
-    border-left:2px solid black;
-}
-
-#part2{
     border:2px solid black;
 }
+
+article h1{
+    font-size: 1rem;
+}
+
 
 section{
     margin:1%;
