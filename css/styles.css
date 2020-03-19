@@ -121,14 +121,14 @@ main section table tbody tr:last-child{
     color:rgb(0, 109, 0);
 }
 
-main section table tbody > tr:first-child, tr:nth-child(4),tr:nth-child(7){
+main section table tbody > tr:first-child, main section table tbody > tr:nth-child(4), main section table tbody > tr:nth-child(7){
     background-color: rgb(255, 126, 126);
 }
 
-main section table tbody >  tr:nth-child(2), tr:nth-child(5), tr:nth-child(8){
+main section table tbody >  tr:nth-child(2), main section table tbody > tr:nth-child(5), main section table tbody > tr:nth-child(8){
     background-color: rgb(126, 255, 126);
 }
 
-main section table tbody >  tr:nth-child(3), tr:nth-child(6), tr:last-child{
+main section table tbody >  tr:nth-child(3), main section table tbody > tr:nth-child(6), main section table tbody > tr:last-child{
     background-color: rgb(187, 203, 255);
 }
