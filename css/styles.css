@@ -1,12 +1,14 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size:100%;
+    margin:0;
 }
 
 nav{
     background-color: rgb(245, 243, 243);
     display: flex;
     justify-content: space-between;
+    margin:8px;
 }
 
 nav img{
@@ -40,52 +42,107 @@ main{
     display:flex;
 }
 
-aside{
-    width: 25%;
+main aside{
+    width: 20%;
     border-right: 1px solid black;
 }
 
-section{
-    width:70%;
+main section{
+    width:80%;
     height: 100%;
 }
 
-aside article{
-    padding:2%;
-    margin:2%;
+main aside article{
+    padding:4px;
+    margin:4px;
     border:1px solid black;
 }
 
-aside article h1{
+main aside article h1{
     font-size: 1.2rem;
 }
 
-section{
-    margin-left:1%;
-    
+main section{
+    margin:5px;
 }
 
-section h1{
+main section h1{
     font-size:2rem;
 }
 
-section img{
+main section img{
     width:20%;
-    border-radius: 100%;
+    border-radius: 50%;
 }
 
-footer p{
+footer {
     text-align:center;
 }
 
-section article{
+main section article{
     width:18%;
     border:1px solid black;
     display: inline-table;
-    margin-bottom:0.5%;
-    padding-left:1%;
+    margin-bottom:5px;
+    padding:5px;
 }
 
-section article h1{
+main section article h1{
     font-size: 1.2rem;
+}
+
+main section table{
+    margin:auto;
+    border: 5px solid black;
+    border-collapse: collapse; /* Les bordures du tableau seront collées (plus joli) */
+    width:75%;
+}
+
+main section table thead td{
+    border: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+}
+
+main section table tbody td{
+    border: 1px solid black;
+}
+
+main section table tbody tr:first-child{
+    color:blue;
+    background-color: rgb(255, 126, 126);
+}
+
+main section table tbody tr:nth-child(2){
+    color:red;
+    background-color: rgb(126, 255, 126);
+}
+
+main section table tbody tr:nth-child(3){
+    background-color: rgb(187, 203, 255);
+}
+
+main section table tbody tr:nth-child(4){
+    background-color: rgb(255, 126, 126);
+}
+
+main section table tbody tr:nth-child(5){
+    background-color: rgb(126, 255, 126);
+}
+
+main section table tbody tr:nth-child(6){
+    background-color: rgb(187, 203, 255);
+}
+
+main section table tbody tr:nth-child(7){
+    background-color: rgb(255, 126, 126);
+}
+
+main section table tbody tr:nth-child(8){
+    background-color: rgb(126, 255, 126);
+}
+
+main section table tbody tr:last-child{
+    background-color: rgb(187, 203, 255);
+    color:rgb(0, 109, 0);
 }
