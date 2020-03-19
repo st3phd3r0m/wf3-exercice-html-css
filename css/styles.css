@@ -147,7 +147,7 @@ main section table tbody tr:nth-child(3n){
     background-color: rgb(187, 203, 255);
 }
 
-main section table tbody tr:nth-child(n+2):hover{
+main section table tbody tr:hover{
     background-color: rgb(255, 126, 126);
 }
 
