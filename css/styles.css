@@ -32,10 +32,10 @@ nav ul li a {
     color:grey;
 }
 
-nav ul li:first-child a {
+/* nav ul li:first-child a {
     color:black;
     font-weight: bold;
-}
+} */
 
 
 /*BALISE MAIN**************************************************************/
@@ -112,43 +112,36 @@ main section table{
     width:75%;
 }
 
-main section table thead th{
-    border: 1px solid black;
-    text-align: center;
-    font-weight: bold; 
-}
-
-main section table tbody tr td{
+th, td{
     border: 1px solid black;
 }
 
-
-main section table tbody tr:first-child{
+tbody tr:first-child{
     color:blue;
 }
 
-main section table tbody tr:nth-child(2){
+tbody tr:nth-child(2){
     color:red;
 }
 
-main section table tbody tr:last-child{
+tbody tr:last-child{
     color:rgb(0, 109, 0);
 }
 
-main section table tbody tr:nth-child(3n+1){
+tbody tr:nth-child(3n+1){
     background-color: rgb(255, 126, 126);
 }
 
-main section table tbody tr:nth-child(3n+2){
+tbody tr:nth-child(3n+2){
     background-color: rgb(126, 255, 126);
 }
 
-main section table tbody tr:nth-child(3n){
+tbody tr:nth-child(3n){
     background-color: rgb(187, 203, 255);
 }
 
-main section table tbody tr:hover{
-    background-color: rgb(255, 126, 126);
+tr:hover{ /*ce selecteur a moins d'importance que les selecteurs au-dessus car ils sont plus précis*/
+    background-color: rgb(255, 126, 126) !important; /*pour cette raison, on force la propriété en ajoutant !important à la valeur de la propriété*/
 }
 
 /*Formulaire***************************************************************/
