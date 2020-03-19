@@ -4,6 +4,7 @@ body{
     margin:0;
 }
 
+/*BARRE DE NAVIGATION********************************************************/
 nav{
     background-color: rgb(245, 243, 243);
     display: flex;
@@ -36,12 +37,15 @@ nav ul li:first-child a {
     font-weight: bold;
 }
 
+
+/*BALISE MAIN**************************************************************/
 main{
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     display:flex;
 }
 
+/*INFORMATIONS COMPLEMENTAIRES************************************************/
 main aside{
     width: 20%;
     border-right: 1px solid black;
@@ -62,6 +66,8 @@ main aside article h1{
     font-size: 1.2rem;
 }
 
+
+/*DESCRIPTION DE L'AUTEUR DU SITE*******************************************/
 main section{
     margin:5px;
 }
@@ -75,9 +81,12 @@ main section img{
     border-radius: 50%;
 }
 
+/*FOOTER**********************************************************************/
 footer {
     text-align:center;
 }
+
+/*"TABLEAU" DES ARTICLES******************************************************/
 
 main section div{
     display: grid;
@@ -95,53 +104,68 @@ main section article h1{
 }
 
 
-
-
-
-
-
+/* TABLEAU************************************************************ */
 main section table{
     margin:auto;
     border: 5px solid black;
-    border-collapse: collapse; /* Les bordures du tableau seront collées (plus joli) */
+    border-collapse: collapse; 
     width:75%;
 }
 
-main section table th{
+main section table thead th{
     border: 1px solid black;
     text-align: center;
-    font-weight: bold;
+    font-weight: bold; 
 }
 
-main section table tr td{
+main section table tbody tr td{
     border: 1px solid black;
 }
 
 
-main section table tr:nth-child(2){
+main section table tbody tr:first-child{
     color:blue;
 }
 
-main section table tr:nth-child(3){
+main section table tbody tr:nth-child(2){
     color:red;
 }
 
-main section table tr:last-child{
+main section table tbody tr:last-child{
     color:rgb(0, 109, 0);
 }
 
-main section table tr:nth-child(3n){
+main section table tbody tr:nth-child(3n+1){
+    background-color: rgb(255, 126, 126);
+}
+
+main section table tbody tr:nth-child(3n+2){
     background-color: rgb(126, 255, 126);
 }
 
-main section table tr:nth-child(n+2):nth-child(3n+1){
+main section table tbody tr:nth-child(3n){
     background-color: rgb(187, 203, 255);
 }
 
-main section table tr:nth-child(3n+2){
+main section table tbody tr:nth-child(n+2):hover{
     background-color: rgb(255, 126, 126);
 }
 
-main section table tr:nth-child(n+2):hover{
-    background-color: rgb(255, 126, 126);
+/*Formulaire***************************************************************/
+
+form{
+    border:1px solid black;
+}
+
+label{
+    display:inline-block;
+    width:25%;
+}
+
+input{
+    width:70%;
+}
+
+textarea{
+    width:70%;
 }
