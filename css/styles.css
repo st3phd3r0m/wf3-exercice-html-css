@@ -153,19 +153,25 @@ main section table tbody tr:hover{
 
 /*Formulaire***************************************************************/
 
-form{
-    border:1px solid black;
-}
-
-label{
+form label{
     display:inline-block;
     width:25%;
+    margin:5px;
+    vertical-align: top;
 }
 
-input{
+form input{
     width:70%;
+    margin:5px;
 }
 
-textarea{
+form textarea{
     width:70%;
+    margin:5px;    
 }
+
+form button{
+    display:block;
+    margin:auto;
+}
+
