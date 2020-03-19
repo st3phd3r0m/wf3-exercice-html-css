@@ -98,37 +98,37 @@ main section table{
     width:75%;
 }
 
-main section table thead td{
+main section table th{
     border: 1px solid black;
     text-align: center;
     font-weight: bold;
 }
 
-main section table tbody td{
+main section table tr td{
     border: 1px solid black;
 }
 
 
-main section table tbody tr:first-child{
+main section table tr:nth-child(2){
     color:blue;
 }
 
-main section table tbody tr:nth-child(2){
+main section table tr:nth-child(3){
     color:red;
 }
 
-main section table tbody tr:last-child{
+main section table tr:last-child{
     color:rgb(0, 109, 0);
 }
 
-main section table tbody > tr:first-child, main section table tbody > tr:nth-child(4), main section table tbody > tr:nth-child(7){
+main section table tr:nth-child(2), main section table tr:nth-child(5), main section table tr:nth-child(8){
     background-color: rgb(255, 126, 126);
 }
 
-main section table tbody >  tr:nth-child(2), main section table tbody > tr:nth-child(5), main section table tbody > tr:nth-child(8){
+main section table tr:nth-child(3), main section table tr:nth-child(6), main section table tr:nth-child(9){
     background-color: rgb(126, 255, 126);
 }
 
-main section table tbody >  tr:nth-child(3), main section table tbody > tr:nth-child(6), main section table tbody > tr:last-child{
+main section table tr:nth-child(4), main section table tr:nth-child(7), main section table tr:last-child{
     background-color: rgb(187, 203, 255);
 }
