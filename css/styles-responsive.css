@@ -1,0 +1,102 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    margin: 0;
+}
+
+/*BARRE DE NAVIGATION********************************************************/
+nav {
+    background-color: rgb(245, 243, 243);
+    margin: 8px;   
+}
+
+nav img {
+    width:100px;
+}
+
+nav ul {
+    float:right;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline; /*On ne peut pas faire mieux pour l'instant : besoin bouton hamburger en JS*/
+    margin: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: grey;
+}
+
+/*BALISE MAIN**************************************************************/
+main {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin:6px
+}
+
+/*INFORMATIONS COMPLEMENTAIRES************************************************/
+
+main aside article h1 {
+    font-size: 1.2rem;
+}
+
+/*DESCRIPTION DE L'AUTEUR DU SITE*******************************************/
+main section {
+    padding: 5px;
+}
+
+main section h1 {
+    font-size: 2rem;
+}
+
+main section img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+/*FOOTER**********************************************************************/
+footer {
+    text-align: center;
+}
+/* Fin vue mobile */
+
+/* Vue tablette */
+@media screen and (min-width: 768px){
+    main{
+        display:flex;        
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+
+    main aside{
+        order:2;
+        width: 20%;
+        border-left:1px solid black;
+    }
+
+    main aside article {
+        border: 1px solid black;
+        padding: 4px;
+        margin: 4px;
+    }
+
+    main section {
+        order:1;
+        width: 80%;
+    }
+}/* Fin vue tablette */
+
+/* Vue desktop */
+@media screen and (min-width: 1200px){
+    main aside{
+        order:1;
+        border:none;
+        border-right:1px solid black;
+    }
+
+    main section {
+        order:2;
+    }
+}/* Fin vue desktop */

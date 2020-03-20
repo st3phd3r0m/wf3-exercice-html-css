@@ -6,7 +6,7 @@
     <title>Exercice html</title>
     <!-- Fichiers CSS -->
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles-responsive.css">
 
     <style>
         nav ul li:last-child a {
@@ -50,17 +50,23 @@
 
         <section>
             <h1>Formulaire de contact</h1>
-            <form action="/action_page.php">
+            <form action="#">
 
-                <label for="sujet">Sujet :</label>
-                <input type="text" id="sujet" name="sujet">
+                <div>
+                    <label for="sujet">Sujet :</label>
+                    <input type="text" id="sujet" name="sujet">                    
+                </div>
 
-                <label for="courriel">E-mail :</label>
-                <input type="email" id="courriel" name="courriel">
+                <div>
+                    <label for="courriel">E-mail :</label>
+                    <input type="email" id="courriel" name="courriel">                    
+                </div>
 
-                <label for="message">Message :</label>
-                <textarea id="w3mission">dfnfgn</textarea>   
-                 <!-- rows="4" cols="50" -->
+                <div>
+                    <label for="message">Message :</label>
+                    <textarea id="message">dfnfgn</textarea>                       
+                </div>
+
 
                 <button type="submit">Valider</button>
 

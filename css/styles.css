@@ -1,35 +1,35 @@
-body{
+body {
     font-family: 'Roboto', sans-serif;
-    font-size:100%;
-    margin:0;
+    font-size: 100%;
+    margin: 0;
 }
 
 /*BARRE DE NAVIGATION********************************************************/
-nav{
+nav {
     background-color: rgb(245, 243, 243);
     display: flex;
     justify-content: space-between;
-    margin:8px;
+    margin: 8px;
 }
 
-nav img{
-    width:100px;
+nav img {
+    width: 100px;
 }
 
-nav ul{
-    list-style-type:none;
-    width:30%;
+nav ul {
+    list-style-type: none;
+    width: 30%;
 }
 
-nav ul li{
+nav ul li {
     display: inline-block;
-    margin-left:5%;
+    margin-left: 5%;
     margin-top: 9%;
 }
 
 nav ul li a {
-    text-decoration:none;
-    color:grey;
+    text-decoration: none;
+    color: grey;
 }
 
 /* nav ul li:first-child a {
@@ -39,132 +39,149 @@ nav ul li a {
 
 
 /*BALISE MAIN**************************************************************/
-main{
+main {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-    display:flex;
+    display: flex;
 }
 
 /*INFORMATIONS COMPLEMENTAIRES************************************************/
-main aside{
+main aside {
     width: 20%;
     border-right: 1px solid black;
 }
 
-main section{
-    width:80%;
-    height: 100%;
+main section {
+    width: 80%;
 }
 
-main aside article{
-    padding:4px;
-    margin:4px;
-    border:1px solid black;
+main aside article {
+    padding: 4px;
+    margin: 4px;
+    border: 1px solid black;
 }
 
-main aside article h1{
+main aside article h1 {
     font-size: 1.2rem;
 }
 
 
 /*DESCRIPTION DE L'AUTEUR DU SITE*******************************************/
-main section{
-    margin:5px;
+main section {
+    margin: 5px;
 }
 
-main section h1{
-    font-size:2rem;
+main section h1 {
+    font-size: 2rem;
 }
 
-main section img{
-    width:20%;
+main section img {
+    width: 20%;
     border-radius: 50%;
 }
 
 /*FOOTER**********************************************************************/
 footer {
-    text-align:center;
+    text-align: center;
 }
 
 /*"TABLEAU" DES ARTICLES******************************************************/
 
-main section div{
+main section>div {
+    /* Les balises DIV enfants de section*/
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /*repeat(5, 1fr);  /*1fr 1fr 1fr 1fr 1fr; */
-    gap: 5px;     /* Au lieu de grid-gap: 5 px */  
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    /*repeat(5, 1fr);  /*1fr 1fr 1fr 1fr 1fr; */
+    gap: 5px;
+    /* Au lieu de grid-gap: 5 px */
 }
 
-main section div article{
-    border:1px solid black;
-    padding:5px; 
+main section div article {
+    border: 1px solid black;
+    padding: 5px;
 }
 
-main section article h1{
+main section article h1 {
     font-size: 1.2rem;
 }
 
 
 /* TABLEAU************************************************************ */
-main section table{
-    margin:auto;
+main section table {
+    margin: auto;
     border: 5px solid black;
-    border-collapse: collapse; 
-    width:75%;
+    border-collapse: collapse;
+    width: 75%;
 }
 
-th, td{
+th,
+td {
     border: 1px solid black;
 }
 
-tbody tr:first-child{
-    color:blue;
+tbody tr:first-child {
+    color: blue;
 }
 
-tbody tr:nth-child(2){
-    color:red;
+tbody tr:nth-child(2) {
+    color: red;
 }
 
-tbody tr:last-child{
-    color:rgb(0, 109, 0);
+tbody tr:last-child {
+    color: rgb(0, 109, 0);
 }
 
-tbody tr:nth-child(3n+1){
+tbody tr:nth-child(3n+1) {
     background-color: rgb(255, 126, 126);
 }
 
-tbody tr:nth-child(3n+2){
+tbody tr:nth-child(3n+2) {
     background-color: rgb(126, 255, 126);
 }
 
-tbody tr:nth-child(3n){
+tbody tr:nth-child(3n) {
     background-color: rgb(187, 203, 255);
 }
 
-tr:hover{ /*ce selecteur a moins d'importance que les selecteurs au-dessus car ils sont plus précis*/
-    background-color: rgb(255, 126, 126) !important; /*pour cette raison, on force la propriété en ajoutant !important à la valeur de la propriété*/
+tr:hover {
+    /*ce selecteur a moins d'importance que les selecteurs au-dessus car ils sont plus précis*/
+    background-color: rgb(255, 126, 126) !important;
+    /*pour cette raison, on force la propriété en ajoutant !important à la valeur de la propriété*/
 }
 
 /*Formulaire***************************************************************/
 
-form label{
-    display:inline-block;
-    width:25%;
-    margin:5px;
-    vertical-align: top;
+/* Selecteur */
+main section form div {
+    display: flex;
+    margin-bottom: 5px;
 }
 
-form input{
-    width:70%;
-    margin:5px;
+form div label {
+    /* width: 20%; */
+    flex: 1;
 }
 
-form textarea{
-    width:70%;
-    margin:5px;    
+form div input,
+form div textarea {
+    /* width: 80%; */
+    flex: 4;
 }
 
-form button{
-    display:block;
-    margin:auto;
+form button {
+    display: block;
+    margin: auto;
 }
 
+/*Les styles hors media queries s'appliquent aux mobiles*/
+body{
+    color:blue;
+}
+
+/* Media queries */
+@media screen and (min-width: 640px){
+    /* Ici s'appliquera le css pour les fen^tres qui font au moins 600px de largeur*/
+    body{
+        color:black;
+    }
+}
