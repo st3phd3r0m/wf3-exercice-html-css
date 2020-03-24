@@ -1,0 +1,29 @@
+@import "variables";
+
+/* Navigation */ 
+nav{
+    padding:8px;
+    img{
+        width:100px;
+        // Attention à la variable (commentaire non pris en compte dans le fichier css
+        border:$border;
+    }
+    ul{
+        float:right;
+        list-style: none;
+        color: $gris;
+        li{
+            display: inline;
+            +a{
+                text-decoration: none;
+                color: $gris;
+                &:hover{
+                    text-decoration: underline;
+                }
+                .classe{
+                    border:none;
+                }
+            }
+        }
+    }
+}
